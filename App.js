@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import ProductOverVieweReducer from './store/reducers/ProductOverVieweReducer';
+import AddToCartReducer from './store/reducers/AddToCartReducer';
 import ProductOverViweNavigator from './navigation/ProductOverView';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
@@ -17,6 +18,7 @@ const fetchFonts = () => {
 
 const rootReducer = combineReducers({
   products: ProductOverVieweReducer,
+  cart:AddToCartReducer
 })
 
 const store = createStore(rootReducer)
