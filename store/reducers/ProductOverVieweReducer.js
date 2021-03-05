@@ -6,7 +6,6 @@ const initialState = {
     userProducts: Products.filter(prod => prod.ownerId === 'u3'),
 }
 
-const ProductOverVieweReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
     return state;
 }
-export default ProductOverVieweReducer;
